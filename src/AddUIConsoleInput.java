@@ -25,7 +25,14 @@ public class AddUIConsoleInput {
         stdOut.print("Input number1: ");
         stdOut.flush();
         String strNumber1 = stdIn.readLine();
+        stdOut.print("Input number2: ");
+        stdOut.flush();
+        String strNumber2 = stdIn.readLine();
+        RequestData requestData = new RequestData();
+        requestData.strNumber1 = strNumber1;
+        requestData.strNumber2 = strNumber2;
 
+        addUseCaseControl.execute(requestData);
         
     }
 
