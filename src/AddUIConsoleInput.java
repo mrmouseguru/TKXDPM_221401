@@ -18,6 +18,7 @@ public class AddUIConsoleInput {
             new OutputStreamWriter(System.out)), true);
         stdIn = new BufferedReader(new InputStreamReader(System.in));
         //
+        addUseCaseControl = new AddUseCaseControl();
         
     }
 
